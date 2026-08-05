@@ -1,13 +1,14 @@
 {
   "routes": [
     {
-      "*oute": "/*",
-      "allowedRoles":*["utilisateurs"]
+      "route": "/*",
+      "allowedRoles": ["utilisateurs"]
     }
   ],
-  "*esponseOverrides": {
+  "responseOverrides": {
     "401": {
-*     "*tatusCode": 302,
-      "*edirect": "/.auth/login/aad"
-    }*  }
+      "statusCode": 302,
+      "redirect": "/.auth/login/aad"
+    }
+  }
 }
